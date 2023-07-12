@@ -5,7 +5,7 @@ Get-ChildItem -Path "$Env:Temp\*" -Recurse -Force | Remove-Item -Force -Recurse 
 # Clear prefetch
 Get-ChildItem -Path "C:\Windows\Prefetch\*" -Recurse -Force | Remove-Item -Force -Recurse -ErrorAction SilentlyContinue
 
-# Empty recycle bin
+# Empty recycle bin 
 Clear-RecycleBin -Force -ErrorAction SilentlyContinue
 
 # Run disk cleanup
